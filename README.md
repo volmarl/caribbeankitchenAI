@@ -25,3 +25,13 @@ Create a `.env` file in the root directory:
 ```text
 GEMINI_API_KEY=your_api_key_here
 AEROSPIKE_HOST=aerospike
+
+### 3. Docker compose build:
+```text
+docker compose up --build
+
+## 📁 Project Structure
+- **app/app.py:** The Streamlit application logic.
+- **app/Dockerfile:** Container configuration for the Python environment.
+- **docker-compose.yml:** Multi-container orchestration (Database + UI).
+- **aerospike_data/:** Persistent storage volume for your recipes.
