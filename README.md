@@ -29,6 +29,7 @@ AEROSPIKE_HOST=aerospike
 ### 3. Docker compose build:
 ```text
 docker compose up --build
+```
 
 ## 📁 Project Structure
 - **app/app.py:** The Streamlit application logic.
