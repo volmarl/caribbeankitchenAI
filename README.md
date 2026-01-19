@@ -4,7 +4,7 @@ An AI-powered recipe generator that uses **Gemini 2.5 Flash** to create authenti
 
 ## 🚀 Features
 - **AI Generation:** Uses Gemini 2.5 Flash with "Thinking" reasoning for culinary expertise.
-- **Fast Storage:** Built on Aerospike Community Edition.
+- **Fast Storage:** Built on Aerospike Database.
 - **Secondary Indexing:** Instant filtering by island (e.g., Jamaica, Haiti, Trinidad).
 - **Dockerized:** One-command deployment using Docker Compose.
 
