@@ -1,0 +1,5 @@
+.env
+aerospike_data/
+__pycache__/
+*.zip
+venv/
