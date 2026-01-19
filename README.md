@@ -25,7 +25,7 @@ Create a `.env` file in the root directory:
 ```text
 GEMINI_API_KEY=your_api_key_here
 AEROSPIKE_HOST=aerospike
-
+```
 ### 3. Docker compose build:
 ```text
 docker compose up --build
