@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  aerospike:
+    image: aerospike/aerospike-server:latest
+    container_name: caribbean-db
+    ulimits:
+      nofile:
+        soft: 65536
+        hard: 65536
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./aerospike_data:/opt/aerospike/data
+    networks:
+      - kitchen-net
+
+  streamlit-app:
+    build: ./app
+    container_name: caribbean-ui
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - AEROSPIKE_HOST=aerospike
+    ports:
+      - "8501:8501"
+    depends_on:
+      - aerospike
+    networks:
+      - kitchen-net
+
+networks:
+  kitchen-net:
+    driver: bridge
