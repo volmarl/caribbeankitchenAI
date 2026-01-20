@@ -11,7 +11,7 @@ An AI-powered recipe generator that uses **Gemini 2.5 Flash** to create authenti
 ## 🛠 Tech Stack
 - **Frontend:** Streamlit
 - **Database:** Aerospike CE (or EE) (v8.1+)
-- **AI Engine:** Google Gemini 2.5 Flash
+- **AI Engine:** Google Gemini 2.5 Flash or (model = genai.GenerativeModel('gemini-3-flash-preview'))
 - **Orchestration:** Docker Compose
 
 ## 🚦 Quick Start
